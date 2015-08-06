@@ -20,6 +20,5 @@ is automatically run after the nfs share is mounted. Do not add an
 ENTRYPOINT or CMD yourself, otherwise the mount will not take place.
 
 ```bash
-docker run -it --cap-add SYS_ADMIN your-container
-192.168.1.100:/mnt/nfs /mnt/nfs
+docker run -it --cap-add SYS_ADMIN your-container 192.168.1.100:/mnt/nfs /mnt/nfs
 ```
