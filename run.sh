@@ -1,5 +1,4 @@
 #!/bin/sh
-set -m
-rpcbind -f &
+rpcbind
 mount "$@"
-fg
+/app.sh
