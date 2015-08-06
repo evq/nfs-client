@@ -4,6 +4,6 @@ RUN apk add --update nfs-utils && rm -rf /var/cache/apk/*
 
 ADD run.sh /run.sh
 
-ONBUILD ADD app.sh /app.sh
+ONBUILD ADD run.sh /app.sh
 
 ENTRYPOINT ["/run.sh"]

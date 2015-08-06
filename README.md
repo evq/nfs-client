@@ -15,7 +15,7 @@ VOLUME /mnt/nfs
 ...
 ```
 
-There is an onbuild instruction to automatically add `app.sh`, this file
+There is an onbuild instruction to automatically add `run.sh` as `/app.sh`, this file
 is automatically run after the nfs share is mounted. Do not add an
 ENTRYPOINT or CMD yourself, otherwise the mount will not take place.
 
